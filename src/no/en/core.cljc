@@ -134,7 +134,7 @@
   [s]
   (parse-number s #(#?(:clj Integer/parseInt :cljs js/parseInt) %1)))
 
-(defn parse-long
+#_(defn parse-long
   "Parse `s` as a long number."
   [s]
   (parse-number s #(#?(:clj Long/parseLong :cljs js/parseInt) %1)))
